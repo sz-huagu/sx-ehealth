@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="  
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+
+	<!-- <import resource="cxf.xml" /> -->
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<!-- <bean id="zYWsdlServicesImple" class="com.health.dio.wsdl.ZYWsdlServicesImple"></bean> -->
+
+	<!-- <jaxws:server serviceClass="com.health.dio.wsdl.IZYWsdlServices" address="/services"> 
+		<jaxws:serviceBean> <ref bean="zYWsdlServicesImple" /> </jaxws:serviceBean> 
+		</jaxws:server> -->
+
+	<!-- <jaxws:endpoint id="zYWsdlServices"
+		implementor="com.health.dio.wsdl.ZYWsdlServicesImple" address="/services" /> -->
+
+
+</beans>
